@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 98vw;
+}
+
+#caixa {
+    background: #3FAF82;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#botao {
+    width: 80px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#botao:hover {
+    cursor: pointer;
+}
+
+#barr1, #barr2, #barr3 {
+    background: white;
+    width: 80px;
+    height: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#barr1 {
+    animation: barra1 1s infinite alternate;
+    z-index: 2;
+    position: absolute;
+}
+
+#barr2 {
+    animation: barra2 1s infinite alternate;
+    margin: auto;
+    transform: translateY(23px);
+    z-index: 1;
+}
+
+#barr3 {
+    animation: barra3 1s infinite alternate; 
+    z-index: 3;
+    top: 100%;
+    position: absolute;
+}
+
+@keyframes barra1 {
+    0% {
+        top: 0%;
+    }
+    50% {
+        rotate: 0deg;
+        top: 50%;
+    }
+    100% {
+        rotate: 45deg;
+        top: 50%;
+    }
+}
+
+@keyframes barra2 {
+    50% {
+        height: 2px;
+        width: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes barra3 {
+    0% {
+        top: 100%;
+    }
+    50% {
+        rotate: 0deg;
+        top: 50%;
+    }
+    100% {
+        rotate: 135deg;
+        top: 50%;
+    }
+}
