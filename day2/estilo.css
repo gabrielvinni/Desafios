@@ -7,7 +7,8 @@
 
 body {
     height: 100vh;
-    width: 98vw;
+    width: 100vw;
+    background-color: rgb(48, 48, 48);
 }
 
 #caixa {
@@ -35,7 +36,7 @@ body {
     cursor: pointer;
 }
 
-#barr1, #barr2, #barr3 {
+.barr {
     background: white;
     width: 80px;
     height: 8px;
@@ -44,20 +45,17 @@ body {
 }
 
 #barr1 {
-    animation: barra1 1s infinite alternate;
     z-index: 2;
     position: absolute;
 }
 
 #barr2 {
-    animation: barra2 1s infinite alternate;
     margin: auto;
     transform: translateY(23px);
     z-index: 1;
 }
 
-#barr3 {
-    animation: barra3 1s infinite alternate; 
+#barr3 { 
     z-index: 3;
     top: 100%;
     position: absolute;
