@@ -47,18 +47,21 @@ body {
 #barr1 {
     z-index: 2;
     position: absolute;
+    animation: barra1 0.7s ease-in-out forwards;
 }
 
 #barr2 {
     margin: auto;
     transform: translateY(23px);
     z-index: 1;
+    animation: barra2 0.7s ease-in-out forwards;
 }
 
 #barr3 { 
     z-index: 3;
     top: 100%;
     position: absolute;
+    animation: barra3 0.7s ease-in-out forwards;
 }
 
 @keyframes barra1 {
