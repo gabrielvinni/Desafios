@@ -5,6 +5,10 @@
     margin: 0px;
 }
 
+#troca {
+    display: none;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -23,16 +27,13 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-#botao {
+.botao {
     width: 80px;
     height: 45px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#botao:hover {
     cursor: pointer;
 }
 
@@ -47,24 +48,21 @@ body {
 #barr1 {
     z-index: 2;
     position: absolute;
-    animation: barra1 0.7s ease-in-out forwards;
 }
 
 #barr2 {
     margin: auto;
     transform: translateY(23px);
     z-index: 1;
-    animation: barra2 0.7s ease-in-out forwards;
 }
 
 #barr3 { 
     z-index: 3;
     top: 100%;
     position: absolute;
-    animation: barra3 0.7s ease-in-out forwards;
 }
 
-@keyframes barra1 {
+@keyframes b1i {
     0% {
         top: 0%;
     }
@@ -78,7 +76,21 @@ body {
     }
 }
 
-@keyframes barra2 {
+@keyframes b1v {
+    0% {
+        rotate: 45deg;
+        top: 50%;
+    }
+    50% {
+        rotate: 0deg;
+        top: 50%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+@keyframes b2i {
     50% {
         height: 2px;
         width: 0px;
@@ -90,7 +102,7 @@ body {
     }
 }
 
-@keyframes barra3 {
+@keyframes b3i {
     0% {
         top: 100%;
     }

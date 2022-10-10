@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    
     <div id="caixa">
-            <div id="botao">
-                <div id="barr1" class="barr"></div>
-                <div id="barr2" class="barr"></div>
-                <div id="barr3" class="barr"></div>
-            </div>
+        <div class="botao" onclick="clickmenu()">
+            <div id="barr1" class="barr"></div>
+            <div id="barr2" class="barr"></div>
+            <div id="barr3" class="barr"></div>
+        </div>
+        <div id="troca"></div>
     </div>
 </body>
-<script src="script.js"></script>
+<script>
+    function clickmenu(){
+        barr1.style.animation = 'b1i 1s forwards'
+        barr2.style.animation = 'b2i 1s forwards'
+        barr3.style.animation = 'b3i 1s forwards'
+    }
+</script>
 </html>
