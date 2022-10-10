@@ -96,9 +96,22 @@ body {
         width: 0px;
         opacity: 0;
     }
-
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes b2v {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        height: 2px;
+        width: 0px;
+    }
+    100% {
+        width: 80px;
+        height: 8px;
     }
 }
 
@@ -113,5 +126,19 @@ body {
     100% {
         rotate: 135deg;
         top: 50%;
+    }
+}
+
+@keyframes b3v {
+    0% {
+        rotate: 135deg;
+        top: 50%;
+    }
+    50% {
+        rotate: 0deg;
+        top: 50%;
+    }
+    100% {
+        top: 100%;
     }
 }
