@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+main {
+    height: 100vh;
+}
+
+h1 {
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 15px;
+    border: 10px solid #0096C7;
+    color: #0096C7;
+    border-radius: 5px;
+    background-color: #eaf8ff;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: #0096C7;
+    color: white;
+}
