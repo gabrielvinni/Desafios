@@ -1,0 +1,67 @@
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272C34;
+}
+
+.skye {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: #7CDCF9;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sun {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 238, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.sand {
+    width: 200px;
+    height: 100px;
+    background-color: #F0DE75;
+    position: absolute;
+    top: 65%;
+}
+
+.pyramid {
+    height: 65px;
+    width: 110px;
+    background-color: white;
+    position: absolute;
+    top: 65.3px;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+.pyramid-right-shadow {
+    z-index: 2;
+    height: 65.3px;
+    width: 55px;
+    background-color: rgb(212, 212, 212);
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    clip-path: polygon(20% 100%, 0% 0%, 100% 100%);
+}
+
+.pyramid-shadow {
+    z-index: 2;
+    width: 220px;
+    height: 100px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.452);
+    clip-path: polygon(25% 0%, 100% 20%, 75% 0%);
+}
