@@ -1,0 +1,18 @@
+.frame {
+    background-color: #42A7A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendario {
+    height: 240px;
+    width: 300px;
+    background-color: white;
+}
+
+.cabecalho {
+    height: 70px;
+    background-color: #F1BA64;
+    color: white;
+}
