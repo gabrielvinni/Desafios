@@ -45,19 +45,19 @@
 }
 
 @keyframes bola1-vai-vem {
-    0%, 20%{transform: scale(0);}
+    0%, 10%{transform: scale(0);}
 
     100%{transform: scale(1);}
 }
 
 @keyframes bola2-vai-vem {
-    0%, 50%{transform: scale(0);}
+    0%, 40%{transform: scale(0);}
 
     100% {transform: scale(1);}
 }
 
 @keyframes bola3-vai-vem {
-    0%, 70% {transform: scale(0);}
+    0%, 65% {transform: scale(0);}
 
     100% {transform: scale(1);}
 }
