@@ -1,0 +1,63 @@
+.frame {
+    background-color: #E56262;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bola1 {
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.541);
+
+    position: absolute;
+
+    animation: bola1-vai-vem 2s infinite alternate;
+}
+
+.bola2 {
+    z-index: 2;
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+
+    position: absolute;
+
+    animation: bola2-vai-vem 2s infinite alternate;
+}
+
+.bola3 {
+    z-index: 3;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+
+    position: absolute;
+    animation: bola3-vai-vem 2s infinite alternate;    
+}
+
+@keyframes bola1-vai-vem {
+    0%, 20%{transform: scale(0);}
+
+    100%{transform: scale(1);}
+}
+
+@keyframes bola2-vai-vem {
+    0%, 50%{transform: scale(0);}
+
+    100% {transform: scale(1);}
+}
+
+@keyframes bola3-vai-vem {
+    0%, 70% {transform: scale(0);}
+
+    100% {transform: scale(1);}
+}
