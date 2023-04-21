@@ -1,0 +1,76 @@
+.frame {
+    background-image: linear-gradient(45deg, #EEBD6C, #CA7D4E);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #786450;
+}
+
+.info {
+    height: 300px;
+    width: 320px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.295);
+
+    display: flex;
+    overflow: hidden;
+}
+
+.perfil {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.arco-interno {
+    height: 90px;
+    width: 90px;
+    border: 1px solid #786450;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.cargo {
+    font-size: .8em;
+}
+
+.dados {
+    width: 40%;
+    height: 100%;
+}
+
+.numero {
+    font-weight: bold;
+}
+
+.posts, .likes, .seguidores {
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5E8DF;
+    margin-bottom: 1%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.posts:hover, .likes:hover, .seguidores:hover {
+    background-color: #e6d4c7;
+}
