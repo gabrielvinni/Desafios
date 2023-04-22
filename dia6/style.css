@@ -26,28 +26,79 @@
     padding-top: 30px;
 }
 
-.arco-interno {
-    height: 90px;
-    width: 90px;
-    border: 1px solid #786450;
+.imagem {
     border-radius: 50%;
-
+    position: relative;
+    width: 92px;
+    height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.arco-externo {
+    width: 92px;
+    height: 92px;
+    border: 1px solid #786450;
+    border-radius: 50%;
+    border-right: 2px solid transparent;
+    position: absolute;
+    z-index: 2;
+    transition: 1.5s;
+}
+
+.arco-interno {
+    width: 86px;
+    height: 86px;
+    border: 1px solid #786450;
+    border-radius: 50%;
+    border-left: 2px solid transparent;
+    position: absolute;
+    transition: 1.5s;
+}
+
+.imagem:hover .arco-externo{
+    transform: rotate(-360deg);
+}
+
+.imagem:hover .arco-interno {
+    transform: rotate(360deg);
 }
 
 img {
+    height: 80px;
     width: 80px;
     border-radius: 50%;
+    display: block;
+    position: absolute;
 }
 
 .nome {
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .cargo {
     font-size: .8em;
+    margin-bottom: 30px
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    width: 110px;
+    border-radius: 20px;
+    color: #786450;
+    border: 1px solid #786450;
+    background-color: transparent;
+    transition: .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #786450;
+    color: white;
 }
 
 .dados {
