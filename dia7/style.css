@@ -1,0 +1,97 @@
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #264057;
+}
+
+.painel {
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.painel .header {
+    background-color: #5F98CD;
+    height: 60px;
+    width: 100%;
+    color: white;
+    padding: 0px 15px 0px 15px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.painel .titulo {
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.bt-menu {
+    height: 20px;
+    width: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bt-menu .linha1 {
+    height: 4px;
+    width: 70%;
+    background-color: #c5e3ff;
+    border-radius: 5px;
+    position: absolute;
+    top: 13%;
+    transition: .3s;
+}
+
+.bt-menu .linha2 {
+    height: 4px;
+    width: 100%;
+    background-color: #c5e3ff;
+    border-radius: 5px;
+    bottom: 0;
+    position: absolute;
+    transition: .3s;
+}
+
+.bt-menu .bolinha {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #c5e3ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .3s;
+}
+
+.bt-menu:hover .linha1, .bt-menu:hover .linha2, .bt-menu:hover .bolinha {
+    background-color: white;
+}
+
+#procurar-txt {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+}
+
+.procurar-bt {
+    cursor: pointer;
+    color: #c5e3ff;
+    font-size: 100px;
+    transition: .3s;
+}
+
+.procurar-bt:hover {
+    color: white;
+}
