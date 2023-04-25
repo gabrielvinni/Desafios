@@ -38,6 +38,9 @@
     width: 35px;
     position: relative;
     cursor: pointer;
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
 }
 
 .bt-menu .linha1 {
@@ -76,13 +79,17 @@
 }
 
 #procurar-txt {
+    width: 230px;
+    height: 30px;
     position: absolute;
-    left: 50%;
-    translate: -50%;
     border-radius: 20px;
     border: none;
     padding: 5px 10px 5px 10px;
     outline: none;
+    translate: 20px;
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
 }
 
 .procurar-bt {
@@ -94,4 +101,47 @@
 
 .procurar-bt:hover {
     color: white;
+}
+
+.notificacoes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 240px;
+    width: 100%;
+}
+
+.linha {
+    background-color: #EBEBEB;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 25px;
+    top: 0;
+}
+
+.notificacao {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14%;
+    padding-right: 10px;
+    position: relative;
+    font-size: .9em;
+}
+
+.circulo {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    border: 2px solid #5F98CD;
+    position: absolute;
+    left: -20px;
+    background-color: white;
+    box-shadow: 0 0 0 3px white;
+}
+
+.notificacao:hover {
+    color: #5F98CD;
+    cursor: pointer;
 }

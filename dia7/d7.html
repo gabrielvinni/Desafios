@@ -16,20 +16,33 @@
     <div class="frame">
         <div class="painel">
             <div class="header">
-                <div class="bt-menu">
+                <div class="bt-menu" id="bt-menu">
                     <div class="linha1"></div>
                     <div class="linha2"></div>
                     <div class="bolinha"></div>
                 </div>
                 <span class="titulo">Notificação</span>
                 <input type="text" name="procurar-txt" id="procurar-txt" placeholder="Procurar . . .">
-                <span class="material-symbols-outlined procurar-bt">search</span>
+                <span class="material-symbols-outlined procurar-bt" onclick="procurar()">search</span>
             </div>
             <div class="notificacoes">
                 <div class="linha"></div>
-                <div class="notificacao"></div>
-                <div class="notificacao"></div>
-                <div class="notificacao"></div>
+                <div class="notificacao">
+                    
+                    <div class="circulo"></div>
+                    <span>9:24 AM</span>
+                    <p><strong>John Walker</strong> posted a photo on your wall.</p>
+                </div>
+                <div class="notificacao">
+                    <div class="circulo"></div>
+                    <span>8:19 AM</span>
+                    <p><strong>Alice Parker</strong> commented your last post.</p>
+                </div>
+                <div class="notificacao">
+                    <div class="circulo"></div>
+                    <span>Ontem</span>
+                    <p><strong>Luke Wayne</strong> added you as friend.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -39,5 +52,6 @@
         <p>trocar dia</p>
         <a href="#"><span class="material-symbols-outlined">chevron_right</span></a>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
