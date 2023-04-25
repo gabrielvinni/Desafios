@@ -1,8 +1,15 @@
+@keyframes animacao-de-entrada {
+    0% {translate: 0px 20px; opacity: 0;}
+    100%  {translate: 0px 0px; opacity: 1;}
+}
+
 .frame {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #264057;
+    position: relative;
+    overflow: hidden;
 }
 
 .painel {
@@ -12,6 +19,13 @@
     border-radius: 5px;
     overflow: hidden;
     background-color: white;
+    z-index: 2;
+    position: absolute;
+    transition: .4s ease-in-out;
+}
+
+.painel-direita {
+    translate: 50%;
 }
 
 .painel .header {
@@ -78,18 +92,25 @@
     background-color: white;
 }
 
-#procurar-txt {
+.desativo {
     width: 230px;
-    height: 30px;
+    height: 35px;
     position: absolute;
+    left: 4%;
     border-radius: 20px;
     border: none;
-    padding: 5px 10px 5px 10px;
+    padding: 7px 10px 7px 10px;
     outline: none;
     translate: 20px;
     visibility: hidden;
-    transition: .5s;
     opacity: 0;
+    transition: .5s;
+}
+
+.ativo {
+    translate: 0px;
+    visibility: visible;
+    opacity: 1;
 }
 
 .procurar-bt {
@@ -114,10 +135,10 @@
 
 .linha {
     background-color: #EBEBEB;
-    width: 4px;
+    width: 3px;
     height: 100%;
     position: absolute;
-    left: 25px;
+    left: 26px;
     top: 0;
 }
 
@@ -128,6 +149,14 @@
     padding-right: 10px;
     position: relative;
     font-size: .9em;
+    opacity: 0;
+
+    animation: animacao-de-entrada .6s .4s forwards;
+}
+
+.notificacao:hover {
+    color: #5F98CD;
+    cursor: pointer;
 }
 
 .circulo {
@@ -141,7 +170,43 @@
     box-shadow: 0 0 0 3px white;
 }
 
-.notificacao:hover {
-    color: #5F98CD;
+.menu {
+    background-color: #43627D;
+    color: #93B2CD;
+    height: 270px;
+    width: 270px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    transition: .4s ease-in-out;
+}
+
+.menu-esquerda {
+    translate: -10%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+li {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    transition: .4s;
+}
+
+li span {
+    margin-right: 10px;
+}
+
+li:hover {
+    background-color: #32485c;
+    color: white;
 }

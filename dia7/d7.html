@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dia-#</title>
+    <title>dia-7</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../estilo-pag/frame.css">
     <link rel="stylesheet" href="../estilo-pag/trocar-desafio.css">
@@ -14,15 +14,15 @@
 <body>
     <h1 class="titulo">Dia <strong>7</strong></h1>
     <div class="frame">
-        <div class="painel">
+        <div class="painel" id="painel">
             <div class="header">
-                <div class="bt-menu" id="bt-menu">
+                <div class="bt-menu" id="bt-menu" onclick="abrirmenu()">
                     <div class="linha1"></div>
                     <div class="linha2"></div>
                     <div class="bolinha"></div>
                 </div>
                 <span class="titulo">Notificação</span>
-                <input type="text" name="procurar-txt" id="procurar-txt" placeholder="Procurar . . .">
+                <input type="text" name="procurar-txt" id="procurar-txt" class="desativo" placeholder="Procurar . . .">
                 <span class="material-symbols-outlined procurar-bt" onclick="procurar()">search</span>
             </div>
             <div class="notificacoes">
@@ -44,6 +44,15 @@
                     <p><strong>Luke Wayne</strong> added you as friend.</p>
                 </div>
             </div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><span class="material-symbols-outlined">dashboard</span> Dashborard</li>
+                <li><span class="material-symbols-outlined">account_circle</span> Perfil</li>
+                <li><span class="material-symbols-outlined">notifications</span> Notificação</li>
+                <li><span class="material-symbols-outlined">chat</span> Mensagens</li>
+                <li><span class="material-symbols-outlined">settings</span>Configurações</li>
+            </ul>
         </div>
     </div>
 
