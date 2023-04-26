@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dia-8</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../estilo-pag/frame.css">
+    <link rel="stylesheet" href="../estilo-pag/trocar-desafio.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Dia <strong>8</strong></h1>
+    <div class="frame" onclick="mudacor()"> 
+        <div class="bola"></div>
+        <div class="bolha b1"></div>
+        <div class="bolha b2"></div>
+        <div class="bolha b3"></div>
+        <div class="bolha b4"></div>
+        <div class="bolha b5"></div>
+        <div class="bolha b6"></div>
+        <div class="bolha b7"></div>
+        <div class="bolha b8"></div>
+        <div class="bolinha bn1"></div>
+        <div class="bolinha bn2"></div>
+        <div class="bolinha bn3"></div>
+        <div class="bolinha bn4"></div>
+        <div class="bolinha bn5"></div>
+        <div class="bolinha bn6"></div>
+        <div class="bolinha bn7"></div>
+        <div class="bolinha bn8"></div>
+        <div class="bolinha bn9"></div>
+        <div class="bolinha bn10"></div>
+    </div>
+
+    <div class="trocar-desafio">
+        <a href="../dia7/d7.html"><span class="material-symbols-outlined">chevron_left</span></a>
+        <p>trocar dia</p>
+        <a href="#"><span class="material-symbols-outlined">chevron_right</span></a>
+    </div>
+
+    <script>
+        function mudacor() {
+            const bola = document.querySelector("div.bola")
+            bola.classList.toggle("vermelho")
+            console.log(bola)
+        }
+    </script>
+</body>
+</html>
