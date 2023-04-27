@@ -1,0 +1,287 @@
+.frame {
+    background-color: #1A2238;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes lua-sobe {
+    0% {transform: translateY(200px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes gota-cai {
+    0% {translate: 0px -5px;}
+    100%{translate: -30px 500px;}
+}
+
+.gota-grande {
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background-color: #C6D7DA;
+    border-radius: 5px;
+    transform: rotate(5deg);
+    z-index: 3;
+    top: -10%;
+}
+
+.gg1 {
+    left: 10%;
+    animation: gota-cai .6s infinite .2s;
+}
+
+.gg2 {
+    left: 20%;
+    animation: gota-cai .5s infinite .4s;
+}
+
+.gg3 {
+    left: 30%;
+    animation: gota-cai 1s infinite .6s;
+}
+
+.gg4 {
+    left: 40%;
+    animation: gota-cai .9s infinite .8s;
+}
+
+.gg5 {
+    left: 50%;
+    animation: gota-cai .8s infinite 1s;
+}
+
+.gg6 {
+    left: 60%;
+    animation: gota-cai .5s infinite .6s;
+}
+
+.gg7 {
+    left: 70%;
+    animation: gota-cai .4s infinite 1s;
+}
+
+.gg8 {
+    left: 80%;
+    animation: gota-cai .6s infinite .2s;
+}
+
+.gg9 {
+    left: 90%;
+    animation: gota-cai .7s infinite .8s;
+}
+
+.gg10 {
+    left: 100%;
+    animation: gota-cai 1s infinite .4s;
+}
+
+.gota-media {
+    position: absolute;
+    height: 10px;
+    width: 2px;
+    background-color: #909c9e;
+    border-radius: 5px;
+    transform: rotate(7deg);
+    z-index: 3;
+    top: -10%;
+}
+.gm1 {
+    left: 5%;
+    animation: gota-cai .8s infinite .3s;
+}
+.gm2 {
+    left: 15%;
+    animation: gota-cai .6s infinite .5s;
+}
+.gm3 {
+    left: 25%;
+    animation: gota-cai 1s infinite .7s;
+}
+.gm4 {
+    left: 35%;
+    animation: gota-cai .9s infinite .9s;
+}
+.gm5 {
+    left: 45%;
+    animation: gota-cai .5s infinite 1.1s;
+}
+.gm6 {
+    left: 55%;
+    animation: gota-cai .4s infinite .7s;
+}
+.gm7 {
+    left: 65%;
+    animation: gota-cai .9s infinite .3s;
+}
+.gm8 {
+    left: 75%;
+    animation: gota-cai 1s infinite 1.1s;
+}
+.gm9 {
+    left: 85%;
+    animation: gota-cai .6s infinite .5s;
+}
+.gm10 {
+    left: 95%;
+    animation: gota-cai .5s infinite .7s;
+}
+
+.gota-pequena {
+    position: absolute;
+    height: 7px;
+    width: 2px;
+    background-color: #495658;
+    border-radius: 5px;
+    transform: rotate(7deg);
+    z-index: 3;
+    top: -10%;
+}
+
+.gp1 {
+    left: 7.5%;
+    animation: gota-cai .5s infinite .8s;
+}
+.gp2 {
+    left: 17.5%;
+    animation: gota-cai .7s infinite .4s;
+}
+.gp3 {
+    left: 27.5%;
+    animation: gota-cai .9s infinite .2s;
+}
+.gp4 {
+    left: 37.5%;
+    animation: gota-cai 1s infinite 1s;
+}
+.gp5 {
+    left: 47.5%;
+    animation: gota-cai .6s infinite .6s;
+}
+.gp6 {
+    left: 57.5%;
+    animation: gota-cai .5s infinite .2s;
+}
+.gp7 {
+    left: 67.5%;
+    animation: gota-cai .7s infinite 1s;
+}
+.gp8 {
+    left: 77.5%;
+    animation: gota-cai .9s infinite .4s;
+}
+.gp9 {
+    left: 87.5%;
+    animation: gota-cai .8s infinite .8s;
+}
+.gp10 {
+    left: 97.5%;
+    animation: gota-cai .4s infinite .6s;
+}
+
+.lua {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fff0d9;
+    top: 10%;
+    left: 10%;
+    box-shadow: 0 0 15px #fff0d9;
+    overflow: hidden;
+    transform: translateY(200px);
+    animation: lua-sobe 1.5s forwards .5s cubic-bezier(0, 0.01, 0.23, 1.32);
+}
+.cratera {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #E6D8C3;
+}
+.cr1 {
+    top: 50%;
+    left: 30%;
+    height: 15px;
+    width: 15px;
+}
+.cr2 {
+    top: 10%;
+    left: 5%;
+}
+.cr3 {
+    top: 10%;
+    left: 50%;
+}
+.cr4 {
+    top: 80%;
+    left: 70%;
+    height: 8px;
+    width: 8px;
+}
+.cr5 {
+    top: 50%;
+    left: 60%;
+}
+
+.nuvem-frente {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #303C5D;
+    z-index: 2;
+    transform: translateY(20px);
+}
+.nf1 {
+    top: 58%;
+    left: -38%;
+}
+.nf2 {
+    top: 50%;
+    left: 9%;
+}
+.nf3 {
+    top: 58%;
+    left: 60%;
+}
+
+.nuvem-tras {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #26314F;
+    z-index: 1;
+    transform: translateY(20px);
+}
+.nt1 {
+    top: 40%;
+    left: 5%;
+}
+.nt2 {
+    top: 35%;
+    left: 35%;
+}
+.nt3 {
+    top: 50%;
+    left: 70%;
+}
+
+.display {
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 300;
+    z-index: 4;
+}
+
+.display .temperatura {
+    font-size: 3em;
+    font-weight: 300;
+    margin-right: -40px;
+}
