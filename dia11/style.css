@@ -1,0 +1,41 @@
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+}
+
+#relogio {
+    
+}
+
+#Horas {
+    transform-origin: 50% 50%;
+    transform: rotate(-1.5deg);
+    /* visibility: hidden; */
+}
+
+#segundos {
+    transform-origin: 50% 50%;
+    transform: rotate(3.5deg);
+}
+
+#ponteiro-segundos {
+    transform-origin: 50% 50%;
+    animation: tempo 60s infinite linear;
+}
+
+#ponteiro-minutos {
+    transform-origin: 50% 50%;
+    animation: tempo 3600s infinite linear;
+}
+
+#ponteiro-horas {
+    transform-origin: 50% 50%;
+    animation: tempo 86400s infinite linear;
+}
+
+@keyframes tempo {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
